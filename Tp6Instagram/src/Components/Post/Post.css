@@ -1,0 +1,34 @@
+.post{
+  background:#17132e;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.post:hover{
+  transform:scale(1.02);
+}
+
+.post img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.post-info{
+  padding:15px;
+}
+
+.post-actions{
+  margin-top:10px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.post-actions button{
+  border:none;
+  background:none;
+  color:white;
+  font-size:18px;
+}

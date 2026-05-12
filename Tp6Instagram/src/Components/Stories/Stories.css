@@ -1,0 +1,18 @@
+.stories{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  padding:20px;
+}
+
+.story{
+  text-align:center;
+}
+
+.story img{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  border:3px solid hotpink;
+  object-fit:cover;
+}
