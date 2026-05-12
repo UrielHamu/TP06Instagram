@@ -2,17 +2,27 @@
   display:flex;
   gap:20px;
   overflow-x:auto;
-  padding:20px;
+  padding:25px 30px;
+}
+
+.stories::-webkit-scrollbar{
+  display:none;
 }
 
 .story{
   text-align:center;
+  min-width:80px;
 }
 
 .story img{
-  width:70px;
-  height:70px;
+  width:75px;
+  height:75px;
   border-radius:50%;
-  border:3px solid hotpink;
+  border:3px solid #ff2e88;
   object-fit:cover;
+  margin-bottom:8px;
+}
+
+.story p{
+  font-size:14px;
 }
