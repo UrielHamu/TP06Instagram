@@ -1,4 +1,4 @@
-# Instagram Cat Clone 🐱
+# Instagram Cat Clone 
 
 Proyecto realizado en React inspirado en la interfaz de Instagram, utilizando imágenes de gatos obtenidas desde una API externa.
 
