@@ -49,3 +49,7 @@
 .post-actions button:hover{
   transform:scale(1.1);
 }
+
+.post-actions button.liked{
+  color:red;
+}

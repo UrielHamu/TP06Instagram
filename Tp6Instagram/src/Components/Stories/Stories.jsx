@@ -1,7 +1,7 @@
 import './Stories.css'
 
 function Stories() {
-  const stories = [1,2,3,4,5,6]
+  const stories = [1,2,3,5,7,8]//uso estos numeros porque 4 y 6 no tienen fotos
 
   return (
     <div className='stories'>
@@ -13,7 +13,7 @@ function Stories() {
               alt='story'
             />
 
-            <p>cat_{story}</p>
+            <p>gato_{story}</p>
           </div>
         ))
       }

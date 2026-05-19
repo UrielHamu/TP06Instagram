@@ -63,8 +63,12 @@ function App() {
             />
           </>
         ) : (
-          <Profile user={user} posts={posts} />
-        )}
+      <Profile
+        user={user}
+        posts={posts}
+        setSelectedPost={setSelectedPost}
+      /> 
+      )}
       </div>
 
       {selectedPost && (

@@ -1,9 +1,17 @@
 import "./Profile.css";
+import Post from "../Post/Post";
 
-function Profile({ user, posts }) {
+function Profile({
+  user,
+  posts,
+  setSelectedPost
+}) {
+
   return (
     <div className="profile">
+
       <div className="profile-header">
+
         <img
           src={user.profilePic}
           alt="profile"
@@ -11,6 +19,7 @@ function Profile({ user, posts }) {
         />
 
         <div className="profile-info">
+
           <h1>{user.username}</h1>
 
           <p>{user.bio}</p>
@@ -24,18 +33,22 @@ function Profile({ user, posts }) {
           <button className="edit-profile-btn">
             Edit Profile
           </button>
+
         </div>
       </div>
 
       <div className="profile-posts">
+
         {posts.map((post) => (
-          <img
+          <Post
             key={post.id}
-            src={post.image}
-            alt="cat"
+            post={post}
+            setSelectedPost={setSelectedPost}
           />
         ))}
+
       </div>
+
     </div>
   );
 }
