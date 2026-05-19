@@ -26,7 +26,7 @@ function App() {
         const formattedPosts = data.map((cat, index) => ({
           id: index,
           image: cat.url,
-          username: `cat_user_${index + 1}`,
+          username: `cat_${index + 1}`,
           likes: Math.floor(Math.random() * 1000),
           caption: "Beautiful cat 😺",
           comments: [

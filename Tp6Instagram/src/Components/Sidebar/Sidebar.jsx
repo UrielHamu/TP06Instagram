@@ -1,22 +1,78 @@
 import "./Sidebar.css";
 import user from "../../data/user";
 
+import {
+  FaHome,
+  FaCompass,
+  FaFilm,
+  FaTv,
+  FaBell,
+  FaUser
+} from "react-icons/fa";
+
 function Sidebar({ setView }) {
+
   return (
     <aside className="sidebar">
-      <img src={user.profilePic} alt="profile" />
 
-      <h2>{user.username}</h2>
+      <div className="profile-section">
 
-      <p>{user.followers} followers</p>
+        <img
+          src={user.profilePic}
+          alt="profile"
+        />
 
-      <button onClick={() => setView("feed")}>
-        Home
-      </button>
+        <h2>{user.username}</h2>
 
-      <button onClick={() => setView("profile")}>
-        Profile
-      </button>
+        <p>@cat_user</p>
+
+        <div className="stats-box">
+
+          <div>
+            <h3>121K</h3>
+          </div>
+
+          <div>
+            <h3>900K</h3>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="menu">
+
+        <button onClick={() => setView("feed")}>
+          <FaHome />
+          Home
+        </button>
+
+        <button onClick={() => setView("profile")}>
+          <FaUser />
+          Profile
+        </button>
+
+        <button>
+          <FaCompass />
+          Explore
+        </button>
+
+        <button>
+          <FaFilm />
+          Reels
+        </button>
+
+        <button>
+          <FaTv />
+          IGTV
+        </button>
+
+        <button>
+          <FaBell />
+          Notification
+        </button>
+
+      </div>
+
     </aside>
   );
 }
